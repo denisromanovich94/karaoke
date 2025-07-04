@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Караоке Клуб "Золотой Микрофон"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserve.html">Резерв</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Правила</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Меню</h1>
+            
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="menu-section py-5">
+        <div class="container">
+            <!-- PDF Download Section -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="pdf-download-section">
+                        <h2 class="text-center mb-5">Скачать полное меню</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="pdf-card">
+                                    <div class="pdf-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <h3>Кухня</h3>
+                                    <p>Горячие блюда, закуски, супы, салаты, десерты</p>
+                                    <a href="#" class="btn btn-gold" onclick="downloadPDF('kitchen-menu.pdf')">
+                                        <i class="fas fa-download"></i> Открыть PDF
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="pdf-card">
+                                    <div class="pdf-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <h3>Барная карта</h3>
+                                    <p>Коктейли, алкогольные и безалкогольные напитки</p>
+                                    <a href="#" class="btn btn-silver" onclick="downloadPDF('bar-menu.pdf')">
+                                        <i class="fas fa-download"></i> Открыть PDF
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="pdf-card">
+                                    <div class="pdf-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <h3>Винная карта</h3>
+                                    <p>Элитные вина, шампанское, крепкие напитки</p>
+                                    <a href="#" class="btn btn-bronze" onclick="downloadPDF('wine-menu.pdf')">
+                                        <i class="fas fa-download"></i> Открыть PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Image -->
+            <div class="row mb-5">
+                <div class="col-12">
+
+
+<div class="menu-image-container" style="margin-top:30px;margin-bottom:30px;">
+                        <img src="bar1.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+
+                    <div class="grid-container">
+                        <div class="menu-image-container">
+                        <img src="kitchen_new_page-0001.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+<div class="menu-image-container">
+                        <img src="kitchen_new_page-0002.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+
+<div class="menu-image-container">
+                        <img src="kitchen_new_page-0003.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+
+<div class="menu-image-container">
+                        <img src="kitchen_new_page-0004.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+<div class="menu-image-container">
+                        <img src="kitchen_new_page-0005.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+<div class="menu-image-container">
+                        <img src="kitchen_new_page-0006.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+<div class="menu-image-container">
+                        <img src="kitchen_new_page-0007.jpg" alt="Меню караоке клуба" class="img-fluid w-100">
+                        
+                    </div>
+
+
+
+                    </div>
+                    
+
+<style>
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .pdf-download-section {
+        padding: 10px;
+    }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+</style>
+
+
+
+
+
+
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="navbar-brand" href="index.html">
+                <img src="logo.svg" alt="">
+            </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2023 Дуэты караоке клуб. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
