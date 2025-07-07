@@ -1,13 +1,40 @@
 /* Root Variables */
 :root {
-    --gold: #FFD700;
-    --bronze: #CD7F32;
-    --silver: #C0C0C0;
+    --gold: #ff4ecd;
+    --bronze: #8c52ff;
+    --silver: #00f9ff;
     --white: #FFFFFF;
     --black: #1a1a1a;
     --dark-gray: #2c2c2c;
     --light-gray: #f8f9fa;
 }
+
+
+
+
+/* Root Variables */
+:root {
+  --neon-pink: #ff4ecd;
+  --neon-purple: #8c52ff;
+  --neon-cyan: #00f9ff;
+  --neon-blue: #00bfff;
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --dark-gray: #2c2c2c;
+  --light-gray: #f8f9fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Global Styles */
 * {
@@ -276,7 +303,7 @@ body {
 .about-section {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
-    color: var(--white);
+    color: var(--black);
 }
 
 .section-title {
@@ -523,7 +550,7 @@ body {
 }
 
 .contact-urgent {
-    background: linear-gradient(135deg, var(--gold) 0%, #e6c200 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--bronze) 100%);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -757,7 +784,7 @@ body {
 }
 
 .important-note {
-    background: linear-gradient(135deg, var(--gold) 0%, #e6c200 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--silver) 100%);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -872,6 +899,387 @@ body {
 .fade-in {
     animation: fadeIn 0.6s ease-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Root Variables */
+:root {
+  --neon-pink: #ff4ecd;
+  --neon-purple: #8c52ff;
+  --neon-cyan: #00f9ff;
+  --neon-blue: #00bfff;
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --dark-gray: #2c2c2c;
+  --light-gray: #f8f9fa;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* Navigation */
+.navbar {
+  background: linear-gradient(135deg, var(--dark-gray), var(--light-gray));
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border-bottom: 2px solid var(--neon-purple);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--neon-purple) !important;
+  transition: all 0.3s ease;
+}
+.navbar-brand:hover {
+  color: var(--neon-pink) !important;
+  transform: translateY(-2px);
+}
+.navbar-nav .nav-link {
+  color: var(--black) !important;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--neon-pink) !important;
+  text-shadow: 0 0 5px var(--neon-pink);
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* Hero Slider */
+.carousel-item {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+}
+.carousel-caption h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--neon-pink);
+}
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px var(--neon-cyan);
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+}
+.btn-gold {
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+  color: var(--white);
+  box-shadow: 0 0 10px var(--neon-pink);
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+.btn-silver {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  color: var(--white);
+  box-shadow: 0 0 10px var(--neon-blue);
+}
+.btn-silver:hover {
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+  box-shadow: 0 0 20px var(--neon-pink);
+}
+.btn-bronze {
+  background: linear-gradient(135deg, var(--neon-pink), var(--neon-cyan));
+  color: var(--white);
+  box-shadow: 0 0 10px var(--neon-pink);
+}
+.btn-bronze:hover {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+/* Features Section */
+.features-section,
+.about-section,
+.contact-section,
+.rules-section,
+.menu-section,
+.reservation-section {
+  background: var(--light-gray);
+}
+.feature-card,
+.contact-card,
+.pdf-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+.feature-card:hover,
+.contact-card:hover,
+.pdf-card:hover {
+  box-shadow: 0 0 20px var(--neon-pink);
+  transform: translateY(-10px);
+}
+.feature-icon,
+.contact-icon,
+.pdf-icon {
+  font-size: 3rem;
+  color: var(--neon-purple);
+  transition: all 0.3s ease;
+}
+.feature-card:hover .feature-icon,
+.contact-card:hover .contact-icon,
+.pdf-card:hover .pdf-icon {
+  color: var(--neon-pink);
+  transform: scale(1.1);
+}
+.feature-card h3,
+.contact-card h3,
+.pdf-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.feature-card p,
+.contact-card p,
+.pdf-card p {
+  color: #666;
+}
+
+/* About Section */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--neon-purple);
+}
+.about-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Stats */
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-item h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--neon-cyan);
+}
+.stat-item p {
+  font-size: 0.9rem;
+  color: var(--black);
+}
+
+/* Reservation Form */
+.reservation-form,
+.reservation-info,
+.rules-content,
+.rules-sidebar,
+.pdf-download-section {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.form-control,
+.form-select {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--neon-pink);
+  box-shadow: 0 0 5px var(--neon-pink);
+}
+.form-label {
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* Links */
+a {
+  color: var(--neon-purple);
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+}
+
+/* Footer */
+.footer {
+  background: var(--light-gray);
+  color: var(--black);
+}
+.footer a {
+  color: var(--neon-purple);
+}
+.footer a:hover {
+  color: var(--neon-pink);
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
