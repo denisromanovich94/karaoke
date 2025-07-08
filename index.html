@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Караоке Клуб "Золотой Микрофон"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserve.html">Резерв</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Правила</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="slide-background slide-1"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 fw-bold">Караоке Клуб</h1>
+                    <h2 class="display-4">Золотой Микрофон</h2>
+                    <p class="lead">Премиальный караоке клуб с роскошным интерьером</p>
+                    <a href="reserve.html" class="btn btn-gold btn-lg">Забронировать</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-background slide-2"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 fw-bold">Роскошный Интерьер</h1>
+                    <h2 class="display-4">VIP Залы</h2>
+                    <p class="lead">Эксклюзивные залы для незабываемых вечеринок</p>
+                    <a href="contacts.html" class="btn btn-silver btn-lg">Узнать</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-background slide-3"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 fw-bold">Изысканная Кухня</h1>
+                    <h2 class="display-4">Авторские Коктейли</h2>
+                    <p class="lead">Гастрономические шедевры и уникальные напитки</p>
+                    <a href="menu.html" class="btn btn-bronze btn-lg">Меню</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Интерьер</h3>
+                        <p>Караоке Дуэты это свобода внутри- танцы до утра. Наши клубы открывают потрясающий панорамный обзор! В главных залах низкие столики, мягкие диваны и приглушенный свет. Отдельные караоке кабины выполнены каждая в уникальном стиле модерн. Если вы цените стиль, равно как и вкус, приходите в караоке Дуэты!</p>
+                        <div class="feature-overlay">
+                            <img src="img/kitchen-item1-bg.jpg" alt="Интерьер">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Караоке</h3>
+                        <p>В нашем караоке клубе каждый сможет воплотить в жизнь мечту и почувствовать себя настоящим певцом и звездой, независимо от способностей петь. А наши бэк вокалисты и профессиональное оборудование помогут Вам в этом.</p>
+                        <div class="feature-overlay">
+                            <img src="img/kitchen-item2-bg.jpg" alt="Караоке">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Кухня и Бар</h3>
+                        <p>В караоке Дуэты классические и авторские коктейли по демократичным ценам</p>
+                        <div class="feature-overlay">
+                            <img src="img/kitchen-item3-bg.jpg" alt="Кухня и Бар">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Мероприятия</h3>
+                        <p>Весело и шумно отметьте корпоратив или банкет. А мы все подготовим для этого. Без хлопот, без нервов и все потому что мы сами любим сервис и понимаем детали. У нас действуют бонусы и акции для каждого вида мероприятий. Просто позвоните или оставьте заявку и обсудите с нашими менеджерами. До встречи!</p>
+                        <div class="feature-overlay">
+                            <img src="img/kitchen-item4-bg.jpg" alt="Мероприятия">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" style="padding-right:20px;">
+    <h2 class="section-title">О нас</h2>
+    <p class="lead">Добро пожаловать в караоке-клуб «Золотой Микрофон» — атмосферное место, где каждый вечер наполнен музыкой, эмоциями и незабываемыми впечатлениями.</p>
+    <p>Наш уютный основной зал с мягкими диванами и приглушенным светом располагает к комфортному отдыху, а 6 VIP-залов вместимостью от 5 до 25 человек идеально подойдут для камерных вечеринок, дней рождения, мальчишников, девичников, корпоративов и банкетов. Мы объединили стильный интерьер, высококлассный сервис и профессиональное оборудование, чтобы создать идеальное пространство для вашего праздника.</p>
+    <p>В вашем распоряжении — свыше 80 000 песен и мощная караоке-система AST, гарантирующая качественное звучание. А в баре вас ждут как авторские, так и классические коктейли по демократичным ценам.</p>
+    <div class="stats-row" style="justify-content: start;gap:20px;">
+        <div class="stat-item">
+            <h3>6</h3>
+            <p>VIP-залов</p>
+        </div>
+        <div class="stat-item">
+            <h3>80 000+</h3>
+            <p>Песен в каталоге</p>
+        </div>
+        <div class="stat-item">
+            <h3>7</h3>
+            <p>Лет с вами</p>
+        </div>
+    </div>
+</div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="img/about-us.jpg" alt="О нас" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="map-info">
+                                <h2>Наш адрес</h2>
+                                <p class="lead">Найдите нас в самом сердце города</p>
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>г. Москва, ул. Тверская, 15</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+7 (495) 123-45-67</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Ежедневно с 18:00 до 06:00</span>
+                                    </div>
+                                </div>
+                                <a href="contacts.html" class="btn btn-gold">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4266550620227!2d37.60489831592933!3d55.76191998055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0KLQstC10YDRgdC60LDRjyDRg9C7LiwgMTUsINCc0L7RgdC60LLQsCwgMTI1MDA5!5e0!3m2!1sru!2sru!4v1635000000000!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    
+<footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="">
+            </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2023 Дуэты караоке клуб. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,8 +10,6 @@
 }
 
 
-
-
 /* Root Variables */
 :root {
   --neon-pink: #ff4ecd;
@@ -24,20 +22,9 @@
   --light-gray: #f8f9fa;
 }
 
-
-
-
-
-
-.footer {
-      background: linear-gradient(135deg, var(--dark-gray), var(--light-gray)) !important;
+.navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
-
-
-
-
-
-
 /* Global Styles */
 * {
     margin: 0;
@@ -123,7 +110,7 @@ body {
 }
 
 .slide-1 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/index-slide-2.jpg');
 }
 
 .slide-2 {
@@ -186,7 +173,7 @@ body {
     background: linear-gradient(135deg, #e6c200 0%, var(--gold) 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 .btn-silver {
@@ -206,7 +193,7 @@ body {
     background: linear-gradient(135deg, #a8a8a8 0%, var(--silver) 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(192, 192, 192, 0.5);
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 .btn-bronze {
@@ -437,7 +424,7 @@ body {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
+    /* background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%); */
     color: var(--white);
     padding: 120px 0 60px;
     text-align: center;
@@ -447,12 +434,12 @@ body {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--gold);
+    color: var(--bronze);
 }
 
 .page-header p {
     font-size: 1.2rem;
-    color: var(--silver);
+    color: var(--black);
 }
 
 /* Contact Cards */
@@ -552,7 +539,8 @@ body {
 }
 
 .contact-urgent {
-    background: linear-gradient(135deg, var(--gold) 0%, var(--bronze) 100%);
+    /* background: linear-gradient(135deg, var(--gold) 0%, var(--bronze) 100%); */
+        background: linear-gradient(135deg, var(--gold) 0%, var(--silver) 100%);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -903,15 +891,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Root Variables */
 :root {
   --neon-pink: #ff4ecd;
@@ -936,10 +915,14 @@ body {
   color: var(--black);
   background-color: var(--white);
 }
-
+.footer {
+      /* background: linear-gradient(135deg, var(--dark-gray), var(--light-gray)) !important; */
+    background: white;
+    }
 /* Navigation */
 .navbar {
-  background: linear-gradient(135deg, var(--dark-gray), var(--light-gray));
+  /* background: linear-gradient(135deg, var(--dark-gray), var(--light-gray)); */
+  background: white;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   border-bottom: 2px solid var(--neon-purple);
@@ -973,7 +956,8 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
+  /* background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan)); */
+      background: linear-gradient(135deg, var(--gold) 0%, var(--silver) 100%);
   transition: width 0.3s ease;
 }
 .navbar-nav .nav-link:hover::after,
@@ -1031,31 +1015,39 @@ body {
   border: none;
 }
 .btn-gold {
-  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+  /* background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink)); */
   color: var(--white);
+      background: linear-gradient(135deg, var(--gold) 0%, var(--silver) 100%);
   box-shadow: 0 0 10px var(--neon-pink);
 }
 .btn-gold:hover {
-  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+      color: var(--white);
+  /* background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); */
   box-shadow: 0 0 20px var(--neon-cyan);
+      background: linear-gradient(135deg, var(--silver) 0%, var(--gold) 100%);
 }
 .btn-silver {
-  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  /* background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); */
   color: var(--white);
+      background: linear-gradient(135deg, var(--gold) 0%, var(--silver) 100%);
   box-shadow: 0 0 10px var(--neon-blue);
 }
 .btn-silver:hover {
-  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+      color: var(--white);
+  /* background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink)); */
   box-shadow: 0 0 20px var(--neon-pink);
+      background: linear-gradient(135deg, var(--silver) 0%, var(--gold) 100%);
 }
 .btn-bronze {
-  background: linear-gradient(135deg, var(--neon-pink), var(--neon-cyan));
+  /* background: linear-gradient(135deg, var(--neon-pink), var(--neon-cyan)); */
   color: var(--white);
+      background: linear-gradient(135deg, var(--gold) 0%, var(--silver) 100%);
   box-shadow: 0 0 10px var(--neon-pink);
 }
 .btn-bronze:hover {
-  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  /* background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); */
   box-shadow: 0 0 20px var(--neon-cyan);
+      background: linear-gradient(135deg, var(--silver) 0%, var(--gold) 100%);
 }
 
 /* Features Section */
@@ -1211,78 +1203,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .carousel-caption h1 {
@@ -1344,4 +1264,74 @@ a:hover {
     .menu-image-overlay p {
         font-size: 1rem;
     }
+.btn {
+    font-size: 12px !important;
 }
+
+.row {
+    gap: 15px !important;
+}
+
+.col-md-6.col-lg-3.mb-4 {
+    margin-bottom: 0 !important;
+}
+.rule-category,
+.col-lg-4.col-md-6.mb-4,
+.col-md-4.mb-4 {
+    margin-bottom: 0 !important;
+}
+
+.rules-content,
+.rules-sidebar {
+    padding: 15px;
+}
+.social-links {
+    text-align: start;
+}
+
+
+}
+
+
+.footer p {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

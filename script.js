@@ -232,30 +232,7 @@ function setMinimumDate() {
     }
 }
 
-// PDF Download Function
-function downloadPDF(filename) {
-    // Create a dummy PDF download (in real implementation, this would link to actual PDF files)
-    const link = document.createElement('a');
-    link.href = '#';
-    link.download = filename;
-    
-    // Show download message
-    const alert = document.createElement('div');
-    alert.className = 'alert alert-info alert-dismissible fade show';
-    alert.innerHTML = `
-        <strong>Скачивание...</strong> Файл "${filename}" будет загружен (демо-версия).
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    `;
-    
-    document.querySelector('.pdf-download-section').insertBefore(alert, document.querySelector('.pdf-download-section h2').nextSibling);
-    
-    // Auto-hide after 3 seconds
-    setTimeout(() => {
-        if (alert.parentNode) {
-            alert.remove();
-        }
-    }, 3000);
-}
+
 
 // Parallax Effect for Hero Section
 function initParallaxEffect() {
@@ -333,21 +310,3 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Print Functionality
-function printPage() {
-    window.print();
-}
-
-// Share Functionality
-function shareContent(url, title) {
-    if (navigator.share) {
-        navigator.share({
-            title: title,
-            url: url
-        });
-    } else {
-        // Fallback for browsers that don't support Web Share API
-        const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-        window.open(shareUrl, '_blank');
-    }
-}
