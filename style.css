@@ -341,11 +341,12 @@ body {
     color: var(--silver);
 }
 
-/* Map Section */
+.map-section.full-height,
 .map-section {
     position: relative;
-    height: 100vh;
+    height: 559px !important;
     overflow: hidden;
+    width: 100%;
 }
 
 .map-section.full-height {
@@ -371,7 +372,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 559px;
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(44, 44, 44, 0.8) 100%);
     z-index: 2;
     display: flex;
@@ -1205,6 +1206,7 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    
     .carousel-caption h1 {
         font-size: 2.5rem;
     }
